@@ -38,11 +38,10 @@ def ReLU(arr, cutoff=0):
     """
     Searches for values above cutoff in np array, changes them if exceeding it.
     """
-    for x in arr:
-      if arr[x] < cutoff:
-          arr[x] = cutoff
+    for x in range(len(arr)):
+        if arr[x] < cutoff:
+            arr[x] = cutoff
     return arr
-
 # -----------------------------------------------
 
 
