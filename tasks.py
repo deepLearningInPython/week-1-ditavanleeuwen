@@ -34,11 +34,14 @@ def step(num):
 
 # Your code here:
 # -----------------------------------------------
-def ReLU(input_array, cutoff=0):
+def ReLU(arr, cutoff=0):
     """
-
+    Searches for values above cutoff in np array, changes them if exceeding it.
     """
-    return
+    for x in arr:
+      if arr[x] < cutoff:
+          arr[x] = cutoff
+    return arr
 
 
 # -----------------------------------------------
@@ -54,7 +57,9 @@ def ReLU(input_array, cutoff=0):
 # Your code here:
 # -----------------------------------------------
 
-def neural_net_layer
+def neural_net_layer(arr_2d, arr_p):
+    arr_new = numpy.matmul(arr_2d, arr_p)
+    return ReLU(arr_new)
 
 
 ------------------------------------------
