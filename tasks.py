@@ -4,17 +4,23 @@ import numpy
 # Write your code in between the dashed lines.
 # Don't import additional packages. Numpy suffices.
 
-# Task 1: 
+# Task 1:
 # Instructions:
-#Write a function that takes one numeric argument as input. 
+#Write a function that takes one numeric argument as input.
 #If the number is larger than zero, the function should return 1, otherwise is should return -1.
 #The name of the function should be step
 
 # Your code here:
 # -----------------------------------------------
 
-def step
-
+def step(num):
+    """
+    Takes numeric argument, returns step function output.
+    """
+    if num > 0:
+        return 1
+    else:
+        return -1
 
 # -----------------------------------------------
 
@@ -28,7 +34,11 @@ def step
 
 # Your code here:
 # -----------------------------------------------
-def ReLu
+def ReLU(input_array, cutoff=0):
+    """
+
+    """
+    return
 
 
 # -----------------------------------------------
@@ -47,4 +57,4 @@ def ReLu
 def neural_net_layer
 
 
-# ------------------------------------------
+------------------------------------------
